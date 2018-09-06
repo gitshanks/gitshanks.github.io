@@ -347,6 +347,12 @@ ul li {
 .intro-content li {
 	line-height: 30px;
 	letter-spacing: 1px;
+
+}
+
+.intro-content ul {
+	display: inline;
+
 }
 /* ------------------------------------------------------------------------------
 	 Works
