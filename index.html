@@ -106,7 +106,7 @@ https://templatemo.com/tm-520-highway
         <div class="container-fluid">
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-    
+                    <div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
                                 <h1>Waves <em>tex</em></h1>
@@ -341,33 +341,13 @@ https://templatemo.com/tm-520-highway
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
-
-async function getImageBlobFromUrl(url) {
-  const fetchedImageData = await fetch(url)
-  const blob = await fetchedImageData.blob()
-  return blob
-}
-
-async function copyImageToClipboard(img) {
-  const src = img.src
-  const imageMimeType = getImageMimeTypeFromUrl(src)
-  const blob = imageMimeType === 'image/svg' 
-    ? await getTextBlobFromUrl(src) 
-    : await getImageBlobFromUrl(src)
-  
-  await navigator.clipboard.write([
-    new ClipboardItem({
-      [blob.type]: blob
-    })
-  ])
-}
-
                 function myFunction() 
                 {
               // Get the text field
-                copyImageToClipboard(document.querySelector('https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg'))
+ 
+
              // Copy the text inside the text field
-                 /*navigator.clipboard.writeText("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true");*/
+                 navigator.clipboard.writeText("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true");
   
             // Alert the copied text
                  var x = document.getElementById("snackbar");
