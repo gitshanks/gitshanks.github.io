@@ -341,13 +341,33 @@ https://templatemo.com/tm-520-highway
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
+function imageToBlob(imageURL) {
+  const img = new Image;
+  const c = document.createElement("canvas");
+  const ctx = c.getContext("2d");
+  img.crossOrigin = "";
+  img.src = imageURL;
+  return new Promise(resolve => {
+    img.onload = function () {
+      c.width = this.naturalWidth;
+      c.height = this.naturalHeight;
+      ctx.drawImage(this, 0, 0);
+      c.toBlob((blob) => {
+        // here the image is a blob
+        resolve(blob)
+      }, "image/png", 0.75);
+    };
+  })
+}
+
                 function myFunction() 
                 {
               // Get the text field
- 
-
+const blob = await imageToBlob("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true")
+  const item = new ClipboardItem({ "image/png": blob });
+  navigator.clipboard.write([item]);
              // Copy the text inside the text field
-                 navigator.clipboard.writeText("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true");
+                 /*navigator.clipboard.writeText("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true");*/
   
             // Alert the copied text
                  var x = document.getElementById("snackbar");
