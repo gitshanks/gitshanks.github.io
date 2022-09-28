@@ -76,6 +76,57 @@ https://templatemo.com/tm-520-highway
                 </div>
             </div>
 
+
+</script>
+
+
+<style>
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #282828;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+
+  <div id="snackbar">"texture url copied 🧑‍💻"</div>
+
+
             <script>
 function myFunction() {
   // Get the text field
@@ -85,9 +136,18 @@ function myFunction() {
   navigator.clipboard.writeText("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true");
   
   // Alert the copied text
-  alert("Texture URL Copied");
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+
+  
 }
-</script>
+
+
+
+
+
+
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
                     <a href="img/big_portfolio_item_2.png" data-lightbox="image-1"><div class="thumb">
