@@ -119,17 +119,16 @@ https://templatemo.com/tm-520-highway
                 </div>
             </div>
 
-  <div id="snackbar">texture copied 🧑‍💻</div>
+  <div id="snackbar">texture url copied 🧑‍💻</div>
 
 
             <script>
 function myFunction() {
   // Get the text field
- const item = new ClipboardItem({ "https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true": blob })
+ 
 
   // Copy the text inside the text field
-  navigator.clipboard.write([item]);
- /* navigator.clipboard.writeText("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true"); */
+  navigator.clipboard.writeText("https://images2.imgbox.com/db/ee/7X7YhmOU_o.jpg?download=true");
   
   // Alert the copied text
   var x = document.getElementById("snackbar");
