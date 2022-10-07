@@ -107,7 +107,7 @@ a:visited {
     padding-top: 25px;
 }
 .navbar-brand > img {
-    max-width: 127px;
+    max-width: 176px;
     z-index: 9999;
 }
 @media (max-width: 768px) {
