@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
+         <script src="https://kit.fontawesome.com/92f03c2f74.js" crossorigin="anonymous"></script>
         <style>
 #snackbar {
   visibility: hidden;
@@ -67,13 +67,16 @@
    <body>
       <nav class="navbar navbar-default navbar-fixed-top">
          <div class="col-md-12">
-         <center>
+           
             <a class="navbar-brand" href="index.html">
             <img class="logo" src="img/logo.png" alt="logo">
             </a>
-         </center>
-         
+
+         <i onclick="colormute(this)" class="fa fa-volume-up" style="color: #000;"></i>
          </div>
+
+
+
       </nav>
        <div id="snackbar"></div>
       <!-- Header -->
@@ -107,10 +110,45 @@
   <div class="row">
   
     <div class="col-sm-4 " style="background-image: url('img/img-1.jpg');  background-repeat: no-repeat; background-size: cover; height: 36vh"></div>
-    <div class="col-sm-2 p-5" style="background-color: #CB6983;" onclick="myFunction('#CB6983')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #A6628C;" onclick="myFunction('#A6628C')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #666B9B;" onclick="myFunction('#666B9B')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #C3B4CE;" onclick="myFunction('#C3B4CE')"></div>
+
+
+    <div class="col-sm-2 p-5" style="background-color: #CB6983;" onclick="myFunction('#CB6983')">
+         <div class="text" style="color: #fff; opacity: 0.3;">#CB6983</div>
+      <div class="overlay">
+            <div class="text" style="color: #CB6983;">#CB6983</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+
+     </div>
+
+
+
+
+    <div class="col-sm-2 p-5" style="background-color: #A6628C;" onclick="myFunction('#A6628C')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#A6628C</div>
+          <div class="overlay">
+             <div class="text" style="color: #A6628C;">#A6628C</div>
+
+        <div class="text" style="color: #000;"></br></br>📑 copy</div>
+     </div>
+
+    </div>
+
+    <div class="col-sm-2 p-5" style="background-color: #666B9B;" onclick="myFunction('#666B9B')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#666B9B</div>
+         <div class="overlay">
+               <div class="text" style="color: #666B9B;">#666B9B</div>
+                 <div class="text" style="color: #000;"></br></br>📑 copy</div>
+     </div>
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #C3B4CE;" onclick="myFunction('#C3B4CE')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#C3B4CE</div>
+         <div class="overlay">
+            <div class="text" style="color: #C3B4CE;">#C3B4CE</div>
+                 <div class="text" style="color: #000;"></br></br>📑 copy</div>
+
+     </div>
+    </div>
     
   
   </div>
@@ -123,10 +161,39 @@
   <div class="row pt-1">
   
     <div class="col-sm-4 " style="background-image: url('img/img-2.jpg');  background-repeat: no-repeat; background-size: cover; height: 36vh"></div>
-    <div class="col-sm-2 p-5" style="background-color: #012C39;" onclick="myFunction('#012C39')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #9D9E9D;" onclick="myFunction('#9D9E9D')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #4FA4BF;" onclick="myFunction('#4FA4BF')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #BAD6E5;" onclick="myFunction('#BAD6E5')"></div>
+      
+
+
+    <div class="col-sm-2 p-5" style="background-color: #012C39;" onclick="myFunction('#012C39')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#012C39</div>
+        <div class="overlay">
+            <div class="text" style="color: #012C39;">#012C39</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #9D9E9D;" onclick="myFunction('#9D9E9D')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#9D9E9D</div>
+        <div class="overlay">
+            <div class="text" style="color: #9D9E9D;">#9D9E9D</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
+
+    <div class="col-sm-2 p-5" style="background-color: #4FA4BF;" onclick="myFunction('#4FA4BF')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#4FA4BF</div>
+        <div class="overlay">
+            <div class="text" style="color: #4FA4BF;">#4FA4BF</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #BAD6E5;" onclick="myFunction('#BAD6E5')">
+         <div class="text" style="color: #fff; opacity: 0.3;">#BAD6E5</div>
+        <div class="overlay">
+            <div class="text" style="color: #BAD6E5;">#BAD6E5</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
+    </div>
     
   
   </div>
@@ -138,10 +205,38 @@
   <div class="row pt-1">
   
     <div class="col-sm-4 " style="background-image: url('img/2.jpg');  background-repeat: no-repeat; background-size: cover; height: 36vh"></div>
-    <div class="col-sm-2 p-5" style="background-color: #162523;" onclick="myFunction('#162523')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #293836;" onclick="myFunction('#293836')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #74807C;" onclick="myFunction('#74807C')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #8E9A95;" onclick="myFunction('#8E9A95')"></div>
+    <div class="col-sm-2 p-5" style="background-color: #162523;" onclick="myFunction('#162523')">
+             <div class="text" style="color: #fff; opacity: 0.3;">#162523</div>
+        <div class="overlay">
+            <div class="text" style="color: #162523;">#162523</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+   
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #293836;" onclick="myFunction('#293836')">
+         <div class="text" style="color: #fff; opacity: 0.3;">#293836</div>
+        <div class="overlay">
+            <div class="text" style="color: #293836;">#293836</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #74807C;" onclick="myFunction('#74807C')">
+             <div class="text" style="color: #fff; opacity: 0.3;">#74807C</div>
+        <div class="overlay">
+            <div class="text" style="color: #74807C;">#74807C</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+  
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #8E9A95;" onclick="myFunction('#8E9A95')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#8E9A95</div>
+        <div class="overlay">
+            <div class="text" style="color: #8E9A95;">#8E9A95</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+  
+    </div>
     
   
   </div>
@@ -153,10 +248,34 @@
   <div class="row pt-1">
   
     <div class="col-sm-4 " style="background-image: url('img/1.jpg');  background-repeat: no-repeat; background-size: cover; height: 36vh"></div>
-    <div class="col-sm-2 p-5" style="background-color: #341F10;" onclick="myFunction('#341F10')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #1D1815;" onclick="myFunction('#1D1815')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #454C50;" onclick="myFunction('#454C50')"></div>
-    <div class="col-sm-2 p-5" style="background-color: #26292D;" onclick="myFunction('#26292D')"></div>
+    <div class="col-sm-2 p-5" style="background-color: #341F10;" onclick="myFunction('#341F10')">
+            <div class="text" style="color: #fff; opacity: 0.3;">#341F10</div>
+        <div class="overlay">
+            <div class="text" style="color: #341F10;">#341F10</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #1D1815;" onclick="myFunction('#1D1815')">
+             <div class="text" style="color: #fff; opacity: 0.3;">#1D1815</div>
+        <div class="overlay">
+            <div class="text" style="color: #1D1815;">#1D1815</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #454C50;" onclick="myFunction('#454C50')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#454C50</div>
+        <div class="overlay">
+            <div class="text" style="color: #454C50;">#454C50</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
+    <div class="col-sm-2 p-5" style="background-color: #26292D;" onclick="myFunction('#26292D')">
+        <div class="text" style="color: #fff; opacity: 0.3;">#26292D</div>
+        <div class="overlay">
+            <div class="text" style="color: #26292D;">#26292D</div>
+        <div class="text" style="color: #000;"></br> </br>📑 copy</div>
+     </div>
+    </div>
     
   
   </div>
@@ -178,6 +297,7 @@
       <script src="js/script.js"></script>
 
       <script>
+        var snd = new Audio("sound/khaching.mp3"); 
         var hexcode = "#DD5353";
                 function myFunction(hexcode) 
                 {
@@ -187,6 +307,9 @@
              // Copy the text inside the text field
                  navigator.clipboard.writeText(hexcode);
 
+             
+      
+            snd.play();
             // Alert the copied text
             document.getElementById("snackbar").innerHTML = hexcode + ' copied 🧑‍💻';
                  var x = document.getElementById("snackbar");
@@ -194,6 +317,12 @@
                  x.className = "show";
                  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
                 }
+
+            function colormute(x) 
+             { x.classList.toggle("fa-volume-xmark");
+             snd.muted ? snd.muted = false : snd.muted = true ;
+        
+             }
     </script>
    </body>
 </html>

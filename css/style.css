@@ -112,8 +112,9 @@ a:visited {
 }
 @media (max-width: 768px) {
     .navbar-brand {
-        padding-left: 0px;
+        padding-right: 0px;
     }
+
 }
 .navbar-default {
     background-color: transparent;
@@ -524,3 +525,47 @@ a:visited {
     height: 100vh!important;
     object-fit: cover;
 }
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+
+.col-sm-2:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+i.fa {
+    font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 20px;
+   padding-left: 8px;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+
